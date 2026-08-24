@@ -33,7 +33,13 @@ MySQL Database
 
 Movie information is retrieved from the OMDb API.
 
-## How to Run
+## How to Run  
+
+Environment Setup
+Create a .env file in the root of the frontend folder, at the same level as package.json.
+Add your OMDb API key:
+VITE_OMDB_API_KEY=your_api_key_here
+Replace your_api_key_here with your actual OMDb API key.
 
 ### 1. Start MySQL
 
