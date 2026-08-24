@@ -1,0 +1,173 @@
+.movie-details {
+    min-height: 100vh;
+    padding: 40px;
+    background: linear-gradient(135deg, #f5f7fa, #e4e8ec);
+}
+
+.movie-details h1 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+.movie-details>img {
+    display: block;
+    width: 220px;
+    max-height: 330px;
+    object-fit: cover;
+    margin: 0 auto 25px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.movie-details>p {
+    max-width: 900px;
+    margin: 10px auto;
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+/* =========================
+   REVIEW FORM
+   ========================= */
+
+.movie-details h2 {
+    max-width: 1200px;
+    margin: 40px auto 20px;
+}
+
+/* Center the Write a Review heading */
+.movie-details h2:first-of-type {
+    text-align: center;
+}
+
+/* Rating label + select */
+.movie-details label {
+    display: block;
+    width: 500px;
+    max-width: 100%;
+    margin: 0 auto 8px;
+    font-weight: bold;
+}
+
+.movie-details select {
+    display: block;
+    width: 500px;
+    max-width: 100%;
+    margin: 0 auto 15px;
+    padding: 10px 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background: white;
+    font-size: 15px;
+}
+
+/* Review textarea */
+.movie-details textarea {
+    display: block;
+    width: 500px;
+    max-width: 100%;
+    min-height: 120px;
+    margin: 0 auto 15px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    resize: vertical;
+    font-family: inherit;
+    font-size: 15px;
+}
+
+.movie-details textarea:focus,
+.movie-details select:focus {
+    outline: none;
+    border-color: #777;
+}
+
+/* Submit button */
+.movie-details>button {
+    display: block;
+    margin: 10px auto 30px;
+    padding: 10px 24px;
+    border: none;
+    border-radius: 7px;
+    background: #222;
+    color: white;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.movie-details>button:hover {
+    background: #555;
+    transform: translateY(-2px);
+}
+
+/* =========================
+   REVIEWS
+   ========================= */
+.review-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    margin: 1rem auto;
+    padding: 1rem;
+    max-width: 1200px;
+}
+
+.review-grid-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 280px;
+    padding: 25px;
+    border: 2px solid green;
+    border-radius: 10px;
+    background: white;
+}
+
+.review-grid-box:hover {
+    transform: translateY(-5px);
+    background-color: rgb(255, 207, 145);
+    color: white;
+    border: 2px solid red;
+}
+
+.stars {
+    margin: 0 0 15px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.review-text {
+    padding: 0;
+    margin: 10px 0;
+    text-align: center;
+    flex-grow: 1;
+}
+
+.review-grid-box h3 {
+    text-align: center;
+    margin: 10px 0;
+}
+
+.review-grid-box-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-top: auto;
+}
+
+.review-grid-box button {
+    padding: 8px 16px;
+    margin: 0;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    background-color: #333;
+    color: white;
+}
+
+.review-grid-box button:hover {
+    background-color: #555;
+    transform: translateY(-2px);
+}
